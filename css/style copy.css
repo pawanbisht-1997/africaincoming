@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.knowAfrica a{
+    /* border: 1px solid #ffffff63; */
+    border-radius: 4px;
+    padding: 12px 0px;
+    display: inline-block;
+    margin-top: 10px;
+    width: 75%;
+}
+
+/* #knowAfrica{overflow: hidden;} */
+.item{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+
+
+  
+}
+
+.item img{
+    border-radius: 5px;
+}
+.item .fa{
+    color:  #fff !important;
+}
+
+.item::after{
+    background-color: #00000042;
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    height: 100%;
+    border-radius: 5px;
+}
+.item .contant {
+    position: absolute;
+    bottom: -25%;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.item .contant h3{
+    padding: 0;
+    margin: 0 0 10px;
+    font-size: 23px;
+}
+
+.item .contant p{
+    visibility: hidden;
+    opacity: 0;
+}
+.item .contant a{
+    visibility: hidden;
+    opacity: 0;
+}
+.item:hover .contant{
+    bottom: 0;
+    background-color: #7e4617;
+    padding: 15px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.item:hover .contant p{
+    visibility: visible;
+    opacity: 1;
+}
+.item:hover .contant a {
+    opacity: 1;
+    visibility: visible;
+    color: #fff8f8c7;
+}
+
+
+
+.knowAfrica .left h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+
+.knowAfrica .left p{
+    font-size: 15px;
+    color: #908a8a;
+    text-align: justify;
+}
+
+.knowAfrica .left a{
+    border: 1px solid #814a1c;
+    color: #814a1c;
+    width: 60%;
+    text-align: center;
+    font-size: 16px;
+}
+
+button.owl-prev {
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    background: #a94442 !important;
+    border-radius: 100% !important;
+    top: 30%;
+    left: -45px;
+}
+button.owl-next {
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    background: #a94442 !important;
+    top: 30%;
+    right: -45px;
+    border-radius: 85px 0 0 85px; /* Half-circle */
+    clip-path: inset(0 0 0 50%); /* Clip half of the button */
+}
+
+.owl-theme .owl-dots .owl-dot span {
+   border-radius: unset !important;
+    transform: rotate(45deg);
+}
+
+.fa {
+    color: #fff;
+    width: 65px;
+
+    font-size: 22px;
+ 
+}
+
+button.owl-prev .fa{
+    text-align: right;
+}
+button.owl-next .fa{
+    text-align: left;
+}
+.owl-item.active {
+    margin: 0px 5px !important;
+}
